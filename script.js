@@ -18,9 +18,7 @@ function isIE() {
     }
     return e == -1 ? !1 : !0
 }(function(e, t, n) {
-    debugger;
     function r(e, t, n, r, i, s, o, u, a) {
-        debugger;
         var f = !1;
         o = !0 === o && !0 === u, t = t || {}, t.original || (t.original = {}, f = !0), t.properties = t.properties || {}, t.secondary = t.secondary || {}, u = t.meta;
         for (var c = t.original, h = t.properties, p = t.secondary, d = l.length - 1; 0 <= d; d--) {
@@ -53,7 +51,7 @@ function isIE() {
             return t = t && n.ownerDocument
         }), t
     }
-    debugger;
+    
     var a = "top right bottom left opacity height width".split(" "),
         f = ["top", "right", "bottom", "left"],
         l = ["-webkit-", "-moz-", "-o-", ""],
