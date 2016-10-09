@@ -22,7 +22,7 @@
 
 .logo {
     position: relative;
-    float: left; 
+    float: left;
     width: 25%;
     height: 100%;
     z-index: 3;
@@ -72,9 +72,14 @@
 .utility a {
     position: relative;
     color: #ffffff;
-    font-weight: 600;
     display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
     line-height: 88px;
+}
+
+.utility li {
+    list-style-type: none;
 }
 
 .utility svg {
