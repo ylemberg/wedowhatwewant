@@ -5,13 +5,6 @@
     overflow: hidden;
 }
 
-.nav {
-    position: fixed;
-    width: 100%;
-    height: 88px;
-    z-index: 999;
-}
-
 .main_img {
     width: 100%;
     height: 100%;
@@ -20,12 +13,28 @@
     z-index: 1;
 }
 
-.logo {
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 88px;
+    z-index: 999;
+}
+
+.logo,
+.products,
+.utility {
     position: relative;
-    float: left;
-    width: 25%;
     height: 100%;
     z-index: 3;
+}
+
+.logo,
+.products {
+    float: left;
+}
+
+.logo {
+    width: 25%;
     padding-left: 32px;
     padding-top: 11px;
 }
@@ -37,45 +46,33 @@
 }
 
 .logo a img {
-    position: relative;
     height: 100%;
 }
 
 .products {
-    position: relative;
-    float: left;
     width: 50%;
-    height: 100%;
-    z-index: 3;
     text-align: center;
 }
 
-.products a {
-    color: #ffffff;
-    display: inline-block;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    padding-right: 32px;
-    padding-left: 16px;
-    line-height: 88px;
-}
-
-.utility {
-    position: relative;
-    float: right;
-    max-width: 25%;
-    height: 100%;
-    z-index: 3;
-    margin-right: 68px;
-}
-
+.products a,
 .utility a {
     position: relative;
     color: #ffffff;
     display: inline-block;
+    line-height: 88px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    line-height: 88px;
+}
+
+.products a {
+    padding-right: 32px;
+    padding-left: 16px;
+}
+
+.utility {
+    float: right;
+    max-width: 25%;
+    margin-right: 68px;
 }
 
 .utility li {
@@ -89,10 +86,7 @@
     top: 3px;
 }
 
-.utility svg path {
-    fill: #ffffff;
-}
-
+.utility svg path,
 .utility svg circle {
     fill: #ffffff;
 }
